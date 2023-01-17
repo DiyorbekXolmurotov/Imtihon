@@ -1,0 +1,83 @@
+.Blog .container {
+    margin-bottom: 0px;
+    max-width: $desktop-1;
+    max-height: 600px;
+}
+
+.hero__headingbd {
+    margin: 0px 630px;
+    font-family: 'SF Pro Rounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 107.9%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #5FD788;
+}
+
+.nav__listd {
+    display: flex;
+    margin: 30px 100px;
+    gap: 30px;
+
+    .nav__itemd {
+
+        .borser_feysd {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 371px;
+            height: 200px;
+
+            .nav_h3 {
+                margin: 0px 20px 40px 20px;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 140%;
+                color: #5FD788;
+            }
+
+            .nav_p {
+                margin: 0px 20px;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                color: #4B5563;
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .Blog .container {
+        max-width: $tablet;
+        margin-top: 650px;
+        margin-bottom: 900px;
+        .nav__listd {
+            flex-direction: column;
+        }
+        .hero__headingbd {
+            margin-bottom: 100px;
+            margin-left: 230px;
+        }
+    }
+}
+
+@media only screen and(max-width: $mobile) {
+    .Bestsellers .container {
+        max-width: $mobile;
+    }
+
+    .hero__headingbd {
+        margin: none;
+    }
+
+    .nav__listd {
+        margin-left: 0;
+    }
+}
